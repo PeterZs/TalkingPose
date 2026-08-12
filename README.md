@@ -110,10 +110,18 @@ python -m scripts.pose2vid --config configs/prompts/self_identity.yaml
 
 ## Dataset
 
-The `dataset/` directory contains `video_ids.csv`, which lists the YouTube video IDs included in the TalkingPose dataset.
+The video IDs, annotations, and official dataset splits are available in
+[`dataset/TalkingPose_annotations.csv`](dataset/TalkingPose_annotations.csv).
 
-To download the videos, please use **yt-dlp**:  
-https://github.com/yt-dlp/yt-dlp
+<p align="center">
+  <img src="dataset/TalkingPose_samples.png" alt="TalkingPose dataset samples" width="720">
+</p>
+<p align="center"><sub>Examples from the TalkingPose dataset.</sub></p>
+
+### Download and preprocessing
+
+For download and preprocessing instructions, see
+[`TalkingPose_preprocessing`](https://github.com/ajavanmardii/TalkingPose_preprocessing).
 
 ---
 
@@ -162,5 +170,4 @@ If you find this work useful, please cite:
 - [x] **Pretrained models**
 - [x] **Training code**
 - [x] **Training data**
-- [ ] **Annotations** (will be released soon)
-
+- [x] **Annotations**
